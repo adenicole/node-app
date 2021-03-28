@@ -1,0 +1,8 @@
+#!/bin/sh
+ssh adenicole@34.86.23.129 <<EOF
+ cd ~/node-app
+ git pull
+ npm install — production
+ pm2 restart all
+ exit
+EOF
